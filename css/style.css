@@ -1,0 +1,11 @@
+.content{
+    height: 500px;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/logo-icon.jpg);
+    /* background-size: cover;
+    background-position: center; */
+}
