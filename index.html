@@ -1,65 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Random</title>
+
+    <!-- Link -->
+    <link rel="icon" href="assets/logo-icon.png">
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <!-- <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style> -->
 </head>
 
-
 <body>
-<header  class="" >
-    <!-- logo -->
-    <div class="logo-icon">
+    <header class="main-header">
+        <!-- logo -->
+        <div class="logo-icon"></div>
+        <nav class="tombol-nav">
+            <ul>
+                <a href="#home-page" class="left-rounded">Home</a>
+                <a href="#Location">Location</a>
+                <a href="#Person">Person</a>
+                <a href="#contact" class="right-rounded">Contact</a>
+            </ul>
+        </nav>
+    </header>
 
-    </div>
+    <main>
+        <!-- Home Page -->
+        <section>
+            <header id="home-page">
+                <h1>
+                    Hi
+                    <span id="user-greeting">User</span>
+                    ! Welcome to our Random Website!
+                </h1>
+                <p>Enjoy a random location or a random person image below!</p>
+            </header>
 
-    <nav>
-        <a href="#home-page">Home</a>
-        <a href="#our-profile">Porto</a>
-        <a href="#portofolio">Hubungi Kami</a>
-    </nav>
+            <div class="banner-img">
+            </div>
 
-</header>
-    
-<main>
-    <!-- Home Page -->
-    <section>
-        <header id="home-page">
-            <h1>Hi User <h1 id="user-greeting">User</h1> Welocome to our website</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-        </header>
+        </section>
 
-        <div class="content">
+        <hr>
+        <!-- Location -->
+        <section>
+            <header id="Location">
+                <h1>Random Location</h1>
+            </header>
+            <div class="content-grid">
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/13/200" alt="">
+                    <p>Location 1</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/12/200" alt="">
+                    <p>Location 2</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/14/200" alt="">
+                    <p>Location 3</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/15/200" alt="">
+                    <p>Location 4</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/16/200" alt="">
+                    <p>Location 5</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://picsum.photos/id/17/200" alt="">
+                    <p>Location 6</p>
+                </div>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <hr>
 
-    <!-- Our Page -->
-    <section>
-        <header id="our-profile">
-            <h1>Lorem ipsum</h1>
-        </header>
-        <div class="content">
-        
-        </div>
-    </section>
+        <!-- Person -->
+        <section>
+            <header id="Person">
+                <h1>Random Person</h1>
+            </header>
+            <div class="content-grid">
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/51.jpg" alt="">
+                    <p>Person 1</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/52.jpg" alt="">
+                    <p>Person 2</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/53.jpg" alt="">
+                    <p>Person 3</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/54.jpg" alt="">
+                    <p>Person 4</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/60.jpg" alt="">
+                    <p>Person 5</p>
+                </div>
+                <div class="blok">
+                    <img class="foto-mini" src="https://xsgames.co/randomusers/assets/avatars/male/69.jpg" alt="">
+                    <p>Person 6</p>
+                </div>
 
-    <!-- Portofolio -->
-    <section>
-        <header id="portofolio">
-            <h1>Lorem ipsum</h1>
-        </header>
-        <div class="content">
-        
-        </div>
-    </section>
-</main>
+            </div>
+        </section>
 
+        <hr>
 
-<footer></footer>
+        <!-- Message Us -->
+        <section>
+            <header id="contact">
+                <h1>Contact Us</h1>
+            </header>
+            <div class="content">
+                <form class="kolom">
+                    <div class="baris">
+                        <label for="nama">Nama:</label>
+                        <input class="baris-kanan" type="text" id="nama" name="nama" placeholder="Nama..">
+
+                    </div>
+                    <div class="baris">
+                        <label for="lahir">Tanggal Lahir :</label>
+                        <input class="baris-kanan" type="date" id="lahir" name="lahir">
+                    </div>
+                    <div class="baris">
+                        <label for="">Jenis Kelamin :</label>
+                        <div class="baris-kanan">
+                            <input type="radio" id="laki" name="kelamin" value="Laki-Laki">
+                            <label for="laki">Laki-Laki</label><br>
+                            <input type="radio" id="perempuan" name="kelamin" value="Perempuan">
+                            <label for="perempuan">Perempuan</label><br>
+                        </div>
+                    </div>
+                    <div class="baris">
+                        <label for="subject">Pesan:</label>
+                        <textarea class="baris-kanan" id="subject" name="subject" placeholder="Pesan.."
+                            style="height:100px"></textarea>
+                    </div>
+                    <div class="baris">
+                        <input style="width: 100%;" type="submit" value="Submit">
+                    </div>
+                </form>
+                <br>
+                <div class="kotak"> Lorem Ipsum...</div>
+            </div>
+            <br>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - All rights reserved</p>
+    </footer>
 </body>
+
 </html>
