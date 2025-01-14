@@ -12,78 +12,7 @@
     <!-- Link -->
     <link rel="icon" href="assets/logo-icon.png">
     <link rel="stylesheet" href="css/style.css" />
-
-
-    <!-- <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        input[type=text],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
-        }
-
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-        }
-
-        .col-25 {
-            float: left;
-            width: 25%;
-            margin-top: 6px;
-        }
-
-        .col-75 {
-            float: left;
-            width: 75%;
-            margin-top: 6px;
-        }
-
-        /* Clear floats after the columns */
-        .row::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-
-            .col-25,
-            .col-75,
-            input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
-        }
-    </style> -->
+    <script src="js/script.js"" defer></script>
 </head>
 
 <body>
@@ -195,18 +124,17 @@
                 <h1>Contact Us</h1>
             </header>
             <div class="content">
-                <form class="kolom">
+                <form name="form-pesan" class="kolom" onsubmit="return validateForm()">
                     <div class="baris">
-                        <label for="nama">Nama:</label>
+                        Nama:
                         <input class="baris-kanan" type="text" id="nama" name="nama" placeholder="Nama..">
-
                     </div>
                     <div class="baris">
-                        <label for="lahir">Tanggal Lahir :</label>
+                        Tanggal Lahir :
                         <input class="baris-kanan" type="date" id="lahir" name="lahir">
                     </div>
                     <div class="baris">
-                        <label for="">Jenis Kelamin :</label>
+                        Jenis Kelamin :
                         <div class="baris-kanan">
                             <input type="radio" id="laki" name="kelamin" value="Laki-Laki">
                             <label for="laki">Laki-Laki</label><br>
@@ -215,8 +143,8 @@
                         </div>
                     </div>
                     <div class="baris">
-                        <label for="subject">Pesan:</label>
-                        <textarea class="baris-kanan" id="subject" name="subject" placeholder="Pesan.."
+                        Pesan:
+                        <textarea class="baris-kanan" id="pesan" name="pesan" placeholder="Pesan.."
                             style="height:100px"></textarea>
                     </div>
                     <div class="baris">
@@ -224,13 +152,19 @@
                     </div>
                 </form>
                 <br>
-                <div class="kotak"> Lorem Ipsum...</div>
+                <div class="kotak"> 
+                    <p>Nama: <span id="sender-nama"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-lahir"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-kelamin"></span></p>
+                    <p>Pesan: <span id="sender-pesan"></span></p>
+                </div>
             </div>
             <br>
             <br>
         </section>
     </main>
 
+    
     <footer>
         <p>&copy; 2025 - All rights reserved</p>
     </footer>
